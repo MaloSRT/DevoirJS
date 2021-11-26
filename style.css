@@ -1,0 +1,136 @@
+/* GENERAL */
+
+body {
+    width: 100%;
+    min-height: calc(100vh - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 25px 0 50px 0;
+    background-color: #EEE;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+body.dark {
+    background-color: #222;
+    color: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 350ms ease;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+section {
+    background-color: #FFF;
+    padding: 25px;
+    margin: 25px 25px 0 25px;
+    border-radius: 5px;
+    max-width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 2px;
+}
+
+.dark section {
+    background-color: #333;
+}
+
+button {
+    color: #FFF;
+    background-color: #4a69bd;
+    text-decoration: none;
+    margin-right: 5px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    section {
+        width: 90%;
+    }
+}
+
+
+/* CONVERTISSEUR */
+
+#convertisseur {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#convertisseur > p {
+    font-size: 1.2em;
+    margin: 6px 2px;
+}
+
+#degres {
+    width: 100px;
+    height: 36px;
+    color: #444;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 0 15px;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.dark #degres {
+    color: #FFF;
+    background-color: #282828;
+}
+
+#result {
+    font-weight: bold;
+}
+
+
+/* CITATION */
+
+.hidden {
+    display: none !important;
+}
+
+#cit-bloc {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+#cit-bloc > div {
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 15px 30px;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.dark #cit-bloc > div {
+    background-color: #333;
+}
+

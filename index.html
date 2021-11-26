@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Devoir</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <section>
+            <h1>Générateur de mot de passe</h1>
+            <button id="mdp-btn">Générer</button>
+            <p><code id="mdp"></code></p>
+        </section>
+        <section>
+            <h1 id="conv-titre">Convertisseur de degrés Celsius en Fahrenheit</h1>
+            <div id="convertisseur">
+                <input type="number" name="degres" id="degres" step="0.01" />
+                <p>
+                    °
+                    <span id="unitee-entree">C</span>
+                     = 
+                    <span id="result">?</span>
+                    °
+                    <span id="unitee-result">F</span>
+                </p>
+            </div>
+            <button id="conv-btn">Convertir</button>
+            <button id="inv-btn">Inverser</button>
+        </section>
+        <section>
+            <h1>Générateur de citations</h1>
+            <button id="cit-btn">Afficher</button>
+            <div id="cit-bloc" class="hidden">
+                <div>    
+                    <p id="citation"></p>
+                    <button id="ferm-cit">Fermer</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>Mode sombre</h1>
+            <button id="dark-btn">Activer</button>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
