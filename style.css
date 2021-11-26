@@ -47,7 +47,7 @@ button {
     color: #FFF;
     background-color: #4a69bd;
     text-decoration: none;
-    margin-right: 5px;
+    margin: 0 8px 5px 0;
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
@@ -80,7 +80,7 @@ button {
 }
 
 .mdp {
-    margin-top: 20px;
+    margin: 20px 0 5px 0;
 }
 
 /* CONVERTISSEUR */
